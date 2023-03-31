@@ -14,6 +14,7 @@
 		4C501AB629D6532C00A62992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C501AB529D6532C00A62992 /* Assets.xcassets */; };
 		4C501AB929D6532C00A62992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C501AB729D6532C00A62992 /* LaunchScreen.storyboard */; };
 		4C501AC129D6539E00A62992 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AC029D6539E00A62992 /* WelcomeViewController.swift */; };
+		4C501AC329D67A4000A62992 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AC229D67A4000A62992 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4C501AB829D6532C00A62992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C501ABA29D6532C00A62992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C501AC029D6539E00A62992 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		4C501AC229D67A4000A62992 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4C501AAE29D6532900A62992 /* SceneDelegate.swift */,
 				4C501AB029D6532900A62992 /* LoginViewController.swift */,
 				4C501AC029D6539E00A62992 /* WelcomeViewController.swift */,
+				4C501AC229D67A4000A62992 /* Extensions.swift */,
 				4C501AB229D6532900A62992 /* Main.storyboard */,
 				4C501AB529D6532C00A62992 /* Assets.xcassets */,
 				4C501AB729D6532C00A62992 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C501AC329D67A4000A62992 /* Extensions.swift in Sources */,
 				4C501AB129D6532900A62992 /* LoginViewController.swift in Sources */,
 				4C501AC129D6539E00A62992 /* WelcomeViewController.swift in Sources */,
 				4C501AAD29D6532900A62992 /* AppDelegate.swift in Sources */,
