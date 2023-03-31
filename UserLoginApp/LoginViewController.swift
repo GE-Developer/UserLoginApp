@@ -22,18 +22,7 @@ final class LoginViewController: UIViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let gradient = CAGradientLayer()
-        
-        gradient.frame = view.bounds
-        gradient.colors = [
-            UIColor.systemYellow.cgColor,
-            UIColor.systemGray3.cgColor,
-            UIColor.white.cgColor,
-            UIColor.systemGray3.cgColor,
-            UIColor.systemYellow.cgColor
-        ]
-        view.layer.insertSublayer(gradient, at: 0)
+        setGradient(with: [#colorLiteral(red: 0.4780735057, green: 0.4511794981, blue: 0.5, alpha: 1), #colorLiteral(red: 0.5450980392, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.7529411765, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.5450980392, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.4780735057, green: 0.4511794981, blue: 0.5, alpha: 1)], for: view, at: 0)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -65,13 +54,13 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction private func forgotNameOrPassAction(_ sender: UIButton) {
-        if sender.tag == 0 {
+        if sender.accessibilityIdentifier == "user" {
             showOKAlert(withTitle: "👽", andMessage: "Your name: \(userName)")
         } else {
             showOKAlert(withTitle: "👽", andMessage: "Your password: \(password)")
         }
     }
-
+    
     @IBAction private func textChanged() {
         setupUI()
     }
