@@ -18,6 +18,7 @@ final class WelcomeViewController: UIViewController {
         welcomeLabel.text = "Welcome, " + userName + "!"
         
         let gradient = CAGradientLayer()
+        
         gradient.frame = view.bounds
         gradient.colors = [
             UIColor.purple.cgColor,

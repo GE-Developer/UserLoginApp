@@ -20,6 +20,22 @@ final class LoginViewController: UIViewController {
     private let password = "Pass"
     
     // MARK: - Override Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let gradient = CAGradientLayer()
+        
+        gradient.frame = view.bounds
+        gradient.colors = [
+            UIColor.systemYellow.cgColor,
+            UIColor.systemGray3.cgColor,
+            UIColor.white.cgColor,
+            UIColor.systemGray3.cgColor,
+            UIColor.systemYellow.cgColor
+        ]
+        view.layer.insertSublayer(gradient, at: 0)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         
@@ -70,7 +86,7 @@ extension LoginViewController {
         
         if !userName.isEmpty && !password.isEmpty {
             loginButton.isEnabled = true
-            loginButton.backgroundColor = .systemBlue
+            loginButton.backgroundColor = .systemOrange
         } else {
             loginButton.isEnabled = false
             loginButton.backgroundColor = .systemGray2
