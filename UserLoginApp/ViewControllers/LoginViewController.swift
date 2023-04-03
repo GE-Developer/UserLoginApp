@@ -27,15 +27,15 @@ final class LoginViewController: UIViewController {
        
         userNameTF.text = userName
         passwordTF.text = password
-// ------Доделать кнопку
-        setGradient(with: [#colorLiteral(red: 0.4780735057, green: 0.4511794981, blue: 0.5, alpha: 1), #colorLiteral(red: 0.5450980392, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.7529411765, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.5450980392, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.4780735057, green: 0.4511794981, blue: 0.5, alpha: 1)], for: view, at: 0)
+        
+        setupButton()
+        view.setGradient(with: [#colorLiteral(red: 0.4780735057, green: 0.4511794981, blue: 0.5, alpha: 1), #colorLiteral(red: 0.5450980392, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.7529411765, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.5450980392, green: 0.5137254902, blue: 0.6784313725, alpha: 1), #colorLiteral(red: 0.4780735057, green: 0.4511794981, blue: 0.5, alpha: 1)])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.userName = userName
     }
-   
    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -46,39 +46,28 @@ final class LoginViewController: UIViewController {
     @IBAction private func unwind(for unwindSegue: UIStoryboardSegue) {
         userNameTF.text = ""
         passwordTF.text = ""
-        setupUI()
+        setupButton() //========================================
     }
     
     @IBAction private func loginButtonAction() {
         guard userNameTF.text == userName, passwordTF.text == password else {
+            showAlert(
+                title: "Error",
+                message: "Wrong data!",
+                textField: passwordTF
+            )
             return
         }
-        performSegue(withIdentifier: "showWelcome", sender: nil)
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
     @IBAction private func forgotNameOrPassAction(_ sender: UIButton) {
         sender.accessibilityIdentifier == "user"
-        ? showOKAlert(withTitle: "👽", andMessage: "Your name: \(userName)")
-        : showOKAlert(withTitle: "👽", andMessage: "Your password: \(password)")
+        ? showAlert(title: "👽", message: "Your name: \(userName)")
+        : showAlert(title: "👽", message: "Your password: \(password)")
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-// MARK: - Extension - Button Setup
-extension LoginViewController {
     
-    private func setupUI() {
+    private func setupButton() {
         let userName = userNameTF.text ?? ""
         let password = passwordTF.text ?? ""
         
@@ -91,19 +80,20 @@ extension LoginViewController {
         }
     }
     
-    func showOKAlert(withTitle title: String, andMessage message: String) {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default)
-        
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            textField?.text = ""
+        }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
 }
 
+// MARK: - Work with TextField
 extension LoginViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        setupUI()
+        setupButton()
     }
 }
-
 

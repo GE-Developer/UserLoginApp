@@ -103,7 +103,7 @@
                         <outlet property="loginButton" destination="Zix-4T-mMS" id="SM2-hu-lDO"/>
                         <outlet property="passwordTF" destination="Cyr-2M-Hhq" id="zXv-tw-KyJ"/>
                         <outlet property="userNameTF" destination="5qG-oY-7tH" id="cnc-Av-dWp"/>
-                        <segue destination="ZVC-nP-R09" kind="presentation" identifier="showWelcome" modalTransitionStyle="flipHorizontal" id="jbA-Xt-JBm"/>
+                        <segue destination="ZVC-nP-R09" kind="presentation" identifier="showWelcomeVC" modalTransitionStyle="flipHorizontal" id="jbA-Xt-JBm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
