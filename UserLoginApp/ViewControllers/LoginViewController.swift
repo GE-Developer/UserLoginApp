@@ -46,7 +46,7 @@ final class LoginViewController: UIViewController {
     @IBAction private func unwind(for unwindSegue: UIStoryboardSegue) {
         userNameTF.text = ""
         passwordTF.text = ""
-        setupButton() //========================================
+        setupButton()
     }
     
     @IBAction private func loginButtonAction() {
@@ -67,6 +67,7 @@ final class LoginViewController: UIViewController {
         : showAlert(title: "👽", message: "Your password: \(password)")
     }
     
+    // MARK: - Private Methods
     private func setupButton() {
         let userName = userNameTF.text ?? ""
         let password = passwordTF.text ?? ""

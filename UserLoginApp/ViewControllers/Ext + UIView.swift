@@ -7,7 +7,7 @@
 
 import UIKit
 
-// MARK: - Gradient
+// MARK: - Work with Background Gradient
 extension UIView {
     func setGradient(with colors: [UIColor]) {
         let gradient = CAGradientLayer()
