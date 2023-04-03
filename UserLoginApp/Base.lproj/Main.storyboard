@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -14,30 +15,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="UserLoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AZx-oF-BXl">
-                                <rect key="frame" x="40" y="362" width="350" height="208"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="AZx-oF-BXl">
+                                <rect key="frame" x="40" y="156" width="240" height="196"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5qG-oY-7tH">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="37"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                                        <connections>
-                                            <action selector="textChanged" destination="BYZ-38-t0r" eventType="editingChanged" id="Ql9-Mm-8AE"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Cyr-2M-Hhq">
-                                        <rect key="frame" x="0.0" y="57" width="350" height="37"/>
+                                        <rect key="frame" x="0.0" y="53" width="240" height="37"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
-                                        <connections>
-                                            <action selector="textChanged" destination="BYZ-38-t0r" eventType="editingChanged" id="CZu-Zd-n14"/>
-                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zix-4T-mMS">
-                                        <rect key="frame" x="0.0" y="114" width="350" height="37"/>
+                                        <rect key="frame" x="0.0" y="106" width="240" height="37"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -51,11 +46,10 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="she-KF-ccu"/>
-                                            <segue destination="ZVC-nP-R09" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Hvs-2J-Ehj"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CfK-1d-RK1">
-                                        <rect key="frame" x="0.0" y="171" width="350" height="37"/>
+                                        <rect key="frame" x="0.0" y="159" width="240" height="37"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyM-WC-vf3">
                                                 <rect key="frame" x="0.0" y="0.0" width="114" height="37"/>
@@ -70,7 +64,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndv-0Z-9PT">
-                                                <rect key="frame" x="246" y="0.0" width="104" height="37"/>
+                                                <rect key="frame" x="136" y="0.0" width="104" height="37"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="password"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -86,45 +80,46 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d39-bN-Tty">
-                                <rect key="frame" x="84.666666666666686" y="90.333333333333329" width="261" height="195.33333333333331"/>
+                                <rect key="frame" x="110" y="41.5" width="100" height="100"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="d39-bN-Tty" secondAttribute="height" multiplier="261:199" id="GcY-uW-UyZ"/>
+                                    <constraint firstAttribute="width" secondItem="d39-bN-Tty" secondAttribute="height" multiplier="50:51" id="E7P-HI-ztr"/>
                                 </constraints>
-                                <imageReference key="image" image="person.icloud" catalog="system" symbolScale="default" variableValue="0.0"/>
+                                <imageReference key="image" image="person" catalog="system" symbolScale="default" variableValue="0.0"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AZx-oF-BXl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="E21-k8-uCa"/>
-                            <constraint firstItem="d39-bN-Tty" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="261:932" id="e03-vZ-WTJ"/>
-                            <constraint firstItem="d39-bN-Tty" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="eqU-EP-tJ5"/>
-                            <constraint firstItem="AZx-oF-BXl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fMq-Dh-ahX"/>
-                            <constraint firstItem="d39-bN-Tty" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hE7-F2-REG"/>
+                            <constraint firstItem="d39-bN-Tty" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.180458" id="P5y-03-B99"/>
+                            <constraint firstItem="d39-bN-Tty" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="SCB-bb-fpY"/>
+                            <constraint firstItem="AZx-oF-BXl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-40" id="fMq-Dh-ahX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AZx-oF-BXl" secondAttribute="trailing" constant="40" id="i24-50-95K"/>
+                            <constraint firstItem="d39-bN-Tty" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="loj-vg-yha"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="Zix-4T-mMS" id="SM2-hu-lDO"/>
                         <outlet property="passwordTF" destination="Cyr-2M-Hhq" id="zXv-tw-KyJ"/>
                         <outlet property="userNameTF" destination="5qG-oY-7tH" id="cnc-Av-dWp"/>
+                        <segue destination="ZVC-nP-R09" kind="presentation" identifier="showWelcome" modalTransitionStyle="flipHorizontal" id="jbA-Xt-JBm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.02325581395348" y="2.5751072961373391"/>
+            <point key="canvasLocation" x="112.5" y="2.112676056338028"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="SuZ-6F-mCs">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ZVC-nP-R09" customClass="WelcomeViewController" customModule="UserLoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GWZ-JF-Jm8">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtJ-y6-XAr">
-                                <rect key="frame" x="176" y="777" width="78" height="41"/>
+                                <rect key="frame" x="121" y="447" width="78" height="41"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Log Out">
@@ -135,13 +130,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="KwU-9R-AHe">
-                                <rect key="frame" x="40.333333333333343" y="209" width="349.33333333333326" height="51"/>
+                                <rect key="frame" x="53.5" y="150" width="213" height="51"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NCB-LX-sr3">
-                                <rect key="frame" x="170" y="280" width="90" height="95.333333333333314"/>
+                                <rect key="frame" x="132.5" y="221" width="55" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NCB-LX-sr3" secondAttribute="height" multiplier="86:91" id="oRw-Y3-yB3"/>
                                 </constraints>
@@ -171,11 +166,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YR-pf-P25" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="V4P-oD-43h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="876" y="3"/>
+            <point key="canvasLocation" x="911" y="3"/>
         </scene>
     </scenes>
     <resources>
-        <image name="person.icloud" catalog="system" width="128" height="90"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
