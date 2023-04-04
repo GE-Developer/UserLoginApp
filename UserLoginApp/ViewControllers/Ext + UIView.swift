@@ -19,6 +19,7 @@ extension UIView {
         
         gradient.frame = bounds
         gradient.colors = cgColors
+        
         layer.insertSublayer(gradient, at: 0)
     }
 }

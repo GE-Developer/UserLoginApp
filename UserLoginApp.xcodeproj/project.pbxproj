@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C0BD43829DB853B0034EB41 /* Ext + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BD43729DB853B0034EB41 /* Ext + UIView.swift */; };
+		4C0BD43F29DBA98F0034EB41 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BD43E29DBA98F0034EB41 /* AboutMeViewController.swift */; };
+		4C406DB429DBB1FF00A281D4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C406DB329DBB1FF00A281D4 /* Person.swift */; };
 		4C501AAD29D6532900A62992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AAC29D6532900A62992 /* AppDelegate.swift */; };
 		4C501AAF29D6532900A62992 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AAE29D6532900A62992 /* SceneDelegate.swift */; };
 		4C501AB429D6532900A62992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C501AB229D6532900A62992 /* Main.storyboard */; };
@@ -15,10 +17,13 @@
 		4C501AB929D6532C00A62992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C501AB729D6532C00A62992 /* LaunchScreen.storyboard */; };
 		4C501AC129D6539E00A62992 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AC029D6539E00A62992 /* WelcomeViewController.swift */; };
 		4CCAC84429DB7A6400AB706D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AB029D6532900A62992 /* LoginViewController.swift */; };
+		4CDC3BC929DC8188006E7320 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC3BC829DC8188006E7320 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C0BD43729DB853B0034EB41 /* Ext + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext + UIView.swift"; sourceTree = "<group>"; };
+		4C0BD43E29DBA98F0034EB41 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		4C406DB329DBB1FF00A281D4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4C501AA929D6532900A62992 /* UserLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C501AAC29D6532900A62992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C501AAE29D6532900A62992 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		4C501AB829D6532C00A62992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C501ABA29D6532C00A62992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C501AC029D6539E00A62992 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		4CDC3BC829DC8188006E7320 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 			children = (
 				4C501AB029D6532900A62992 /* LoginViewController.swift */,
 				4C501AC029D6539E00A62992 /* WelcomeViewController.swift */,
+				4C0BD43E29DBA98F0034EB41 /* AboutMeViewController.swift */,
+				4CDC3BC829DC8188006E7320 /* ContactsViewController.swift */,
 				4C0BD43729DB853B0034EB41 /* Ext + UIView.swift */,
 			);
 			path = ViewControllers;
@@ -73,6 +81,7 @@
 		4C0BD43D29DB8A580034EB41 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4C406DB329DBB1FF00A281D4 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +189,9 @@
 				4C0BD43829DB853B0034EB41 /* Ext + UIView.swift in Sources */,
 				4C501AAD29D6532900A62992 /* AppDelegate.swift in Sources */,
 				4CCAC84429DB7A6400AB706D /* LoginViewController.swift in Sources */,
+				4C406DB429DBB1FF00A281D4 /* Person.swift in Sources */,
+				4CDC3BC929DC8188006E7320 /* ContactsViewController.swift in Sources */,
+				4C0BD43F29DBA98F0034EB41 /* AboutMeViewController.swift in Sources */,
 				4C501AAF29D6532900A62992 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +343,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UserLoginApp/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "About Me";
+				INFOPLIST_KEY_NSContactsUsageDescription = "<key>NSContactsUsageDescription </key>";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -364,6 +377,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UserLoginApp/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "About Me";
+				INFOPLIST_KEY_NSContactsUsageDescription = "<key>NSContactsUsageDescription </key>";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
