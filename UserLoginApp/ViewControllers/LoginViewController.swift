@@ -58,8 +58,9 @@ final class LoginViewController: UIViewController {
         if isOwner {
             performSegue(withIdentifier: "showWelcomeVC", sender: user.owner.welcomeMessage)
         } else if isGuest {
-            view.endEditing(true)
+            view.endEditing(true) // тк нужно скрыть клваиатуру перед алертом
             
+            // Развернут алерт тут, так как он нужен один раз
             let alert = UIAlertController(
                 title: "Attention",
                 message: "Do you agree to the terms of confidentielity of personal data?",

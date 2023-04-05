@@ -195,7 +195,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YR-pf-P25" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="V4P-oD-43h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="837" y="1"/>
+            <point key="canvasLocation" x="848" y="0.0"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="VLW-Xr-Xzg">
@@ -206,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="lO6-uR-VLC">
-                                <rect key="frame" x="20" y="159.66666666666666" width="394" height="117.99999999999997"/>
+                                <rect key="frame" x="20" y="139.66666666666666" width="394" height="117.99999999999997"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LAC-LH-ORB">
                                         <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="27.333333333333332"/>
@@ -263,7 +263,7 @@
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NickName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999403953552" translatesAutoresizingMaskIntoConstraints="NO" id="ATk-ID-0SE">
-                                <rect key="frame" x="16" y="84" width="398" height="35.666666666666657"/>
+                                <rect key="frame" x="16" y="64" width="398" height="35.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
                                 <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -274,7 +274,7 @@
                         <constraints>
                             <constraint firstItem="KPm-2I-Mgi" firstAttribute="trailing" secondItem="ATk-ID-0SE" secondAttribute="trailing" constant="16" id="2D7-vj-Q3f"/>
                             <constraint firstItem="KPm-2I-Mgi" firstAttribute="trailing" secondItem="lO6-uR-VLC" secondAttribute="trailing" constant="16" id="AJl-7u-Yie"/>
-                            <constraint firstItem="ATk-ID-0SE" firstAttribute="top" secondItem="KPm-2I-Mgi" secondAttribute="top" constant="40" id="CTu-yn-y49"/>
+                            <constraint firstItem="ATk-ID-0SE" firstAttribute="top" secondItem="KPm-2I-Mgi" secondAttribute="top" constant="20" id="CTu-yn-y49"/>
                             <constraint firstItem="KPm-2I-Mgi" firstAttribute="trailing" secondItem="UQe-rn-3Fh" secondAttribute="trailing" constant="20" id="EWM-6l-wjc"/>
                             <constraint firstItem="ATk-ID-0SE" firstAttribute="leading" secondItem="KPm-2I-Mgi" secondAttribute="leading" constant="16" id="IwM-ND-3fa"/>
                             <constraint firstItem="lO6-uR-VLC" firstAttribute="leading" secondItem="KPm-2I-Mgi" secondAttribute="leading" constant="20" id="Shs-tb-DUE"/>
@@ -332,7 +332,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VD9-TN-hmM">
                                 <rect key="frame" x="16" y="60" width="398" height="720"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">This application is called "About Me." It is written on Swift using UIkit using Storyboards.
+                                <string key="text">This application is called "About Me." It is written on Swift using UIkit using Storyboards.
 Also in this application has frameworks such as Contacts and Mapkit.
 The application consists of five user screens.
 
@@ -358,7 +358,7 @@ And finally, the fifth screen is the screen with the button leading to the main 
 Oh, by the way, you read this text on this page.
 
 If you are interested in seeing this project, click on the button!
-See you in my next projects!</mutableString>
+See you in my next projects!</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
