@@ -19,7 +19,7 @@ final class ContactsViewController: UIViewController {
     
     @IBOutlet private var mapView: MKMapView!
     
-    @IBOutlet var saveContactButton: UIBarButtonItem!
+    @IBOutlet private var saveContactButton: UIBarButtonItem!
     
     // MARK: - Public Properties
     var user: Owner!

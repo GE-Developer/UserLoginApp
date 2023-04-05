@@ -47,8 +47,4 @@ final class AboutMeViewController: UIViewController {
             myImage.image = UIImage(named: user.info.photo[.fourth] ?? "")
         }
     }
-    
-    @IBAction private func ExitButtonPressed(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
-    }
 }

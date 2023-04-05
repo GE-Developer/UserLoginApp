@@ -35,7 +35,7 @@ struct Owner {
 }
 
 struct Info {
-    enum Photo: String {
+    enum Photo {
         case first, second, third, fourth
     }
     
@@ -89,6 +89,7 @@ struct Contact {
     let city: String
     let country: String
     let location: Location
+    let gitHub: String
     
     var fullAdress: String {
         "\(country), \(city)"
@@ -99,8 +100,9 @@ struct Contact {
             tel: "+7 (909) 999-32-79",
             telegram: "@mishabux",
             city: "Tbilisi",
-            country: "Country",
-            location: Location.getCoordinate()
+            country: "Georgia",
+            location: Location.getCoordinate(),
+            gitHub: "https://github.com/GE-Developer/UserLoginApp"
         )
     }
 }

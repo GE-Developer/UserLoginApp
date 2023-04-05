@@ -35,10 +35,12 @@ final class WelcomeViewController: UIViewController {
                 aboutMeVC.user = user.owner
             } else if let contactsVC = navigationVC.topViewController as? ContactsViewController {
                 contactsVC.user = user.owner
+            } else if let gitHubVC = navigationVC.topViewController as? GitHubViewController {
+                gitHubVC.user = user.owner
             }
         }
     }
-    
+        
     override func viewWillLayoutSubviews() {
         setupGoButton()
         animateGoButton()

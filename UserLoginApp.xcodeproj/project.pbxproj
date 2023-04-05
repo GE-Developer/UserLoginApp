@@ -18,6 +18,7 @@
 		4C501AC129D6539E00A62992 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AC029D6539E00A62992 /* WelcomeViewController.swift */; };
 		4CCAC84429DB7A6400AB706D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C501AB029D6532900A62992 /* LoginViewController.swift */; };
 		4CDC3BC929DC8188006E7320 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC3BC829DC8188006E7320 /* ContactsViewController.swift */; };
+		4CDC3BCF29DCD264006E7320 /* GitHubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC3BCE29DCD264006E7320 /* GitHubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4C501ABA29D6532C00A62992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C501AC029D6539E00A62992 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4CDC3BC829DC8188006E7320 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		4CDC3BCE29DCD264006E7320 /* GitHubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				4C501AC029D6539E00A62992 /* WelcomeViewController.swift */,
 				4C0BD43E29DBA98F0034EB41 /* AboutMeViewController.swift */,
 				4CDC3BC829DC8188006E7320 /* ContactsViewController.swift */,
+				4CDC3BCE29DCD264006E7320 /* GitHubViewController.swift */,
 				4C0BD43729DB853B0034EB41 /* Ext + UIView.swift */,
 			);
 			path = ViewControllers;
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDC3BCF29DCD264006E7320 /* GitHubViewController.swift in Sources */,
 				4C501AC129D6539E00A62992 /* WelcomeViewController.swift in Sources */,
 				4C0BD43829DB853B0034EB41 /* Ext + UIView.swift in Sources */,
 				4C501AAD29D6532900A62992 /* AppDelegate.swift in Sources */,
