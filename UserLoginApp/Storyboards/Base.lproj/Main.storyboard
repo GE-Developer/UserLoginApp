@@ -438,7 +438,7 @@ See you in my next projects!</string>
                         <barButtonItem key="leftBarButtonItem" title="Exit" id="i7a-2W-Qns">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>
-                                <segue destination="LHa-0l-CBb" kind="unwind" unwindAction="unwindFor:" id="Kef-fN-tqQ"/>
+                                <action selector="exitButtonPressed:" destination="EKY-y0-Ic4" id="Ii7-5E-Jse"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -448,7 +448,6 @@ See you in my next projects!</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HYB-NL-bgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="LHa-0l-CBb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2994" y="-685"/>
         </scene>

@@ -26,6 +26,10 @@ final class AboutMeViewController: UIViewController {
         aboutMeLabel.text = user.info.mainInfo
     }
     
+    @IBAction func exitButtonPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
+    
     override func viewDidLayoutSubviews() {
         myImage.layer.cornerRadius = myImage.layer.frame.height / 2
     }
