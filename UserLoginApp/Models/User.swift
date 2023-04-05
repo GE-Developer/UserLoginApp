@@ -27,7 +27,7 @@ struct Owner {
     static func aboutOwner() -> Owner {
         Owner(
             login: "Mike",
-            password: "Mike",
+            password: "Pass",
             nickName: "🅜🅘🅒🅗🅐🅔🅛",
             info: Info.getInfo()
         )
